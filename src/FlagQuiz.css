@@ -1,0 +1,212 @@
+/* Flag Quiz Styles */
+.flag-quiz-container {
+    width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f4f4f4;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .quiz-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+  }
+  
+  .quiz-stats {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .stat-item {
+    display: flex;
+    align-items: center;
+    background-color: #e0e7ff;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+  }
+  
+  .stat-item .stat-icon {
+    margin-right: 0.5rem;
+  }
+  
+  .difficulty-selection {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .difficulty-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .difficulty-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .game-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .flag-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .flag-image {
+    max-width: 300px;
+    max-height: 200px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+  }
+  
+  .question-text {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 1rem;
+  }
+  
+  .options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    width: 100%;
+  }
+  
+  .option-btn {
+    padding: 1rem;
+    border: none;
+    border-radius: 12px;
+    background-color: #3498db;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .option-btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  .message {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+  
+  .message.correct {
+    background-color: rgba(46, 204, 113, 0.2);
+    color: #27ae60;
+  }
+  
+  .message.incorrect {
+    background-color: rgba(231, 76, 60, 0.2);
+    color: #c0392b;
+  }
+  
+  .timer-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background-color: #3498db;
+    transition: width 0.5s linear;
+  }
+  
+  .game-over {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .final-score {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+  
+  .play-again-btn {
+    display: flex;
+    align-items: center;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .play-again-btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  /* Dark Mode Styles */
+  body.dark-theme .flag-quiz-container {
+    background-color: #1e2433;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  body.dark-theme .quiz-title,
+  body.dark-theme .final-score {
+    color: #e2e8f0;
+  }
+  
+  body.dark-theme .stat-item {
+    background-color: #2d3748;
+  }
+  
+  body.dark-theme .option-btn {
+    background-color: #4299e1;
+  }
+  
+  body.dark-theme .option-btn:hover {
+    background-color: #3182ce;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .flag-quiz-container {
+      padding: 1rem;
+      margin: 0 1rem;
+    }
+  
+    .options-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .flag-image {
+      max-width: 250px;
+      max-height: 150px;
+    }
+  }
+
+  
